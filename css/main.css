@@ -111,7 +111,7 @@ header {
 .headtext {
     text-align: center;
     width: 100%;
-    padding-top: 10%;
+    padding-top: 9%;
     color: white;
     position: absolute;
 }
@@ -120,27 +120,70 @@ h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 5em;
     margin: 0;
-    text-shadow: 3px 3px 5px #000;
+    text-shadow: 3px 3px 8px #000;
 }
 h2 {
     font-family: 'Parisienne', cursive;
     font-size: 2em;
     margin: -1em 0 0 0;
-    text-shadow: 3px 3px 5px #000;
+    text-shadow: 3px 3px 8px #000;
 }
-.container {
+#contentcontainer {
+    margin: 0 auto; 
+    width: 75%;
+}
+#leftbar {
+    width: 20%;
+    min-width: 5em;
+    text-align: left;
+    padding-right: 5%;
+    float: left;
+    color: #AAAAAA;
+    margin-top: -55px;
+    z-index: 9001;
     position: relative;
-    
+
 }
 .picofme {
-    position: absolute;
-    left: 15%;
-    top: -55px;
-    
     border-radius: 50%;
-    width: 7em;
+    width: 6em;
     border: 5px solid white;
 }
+.myname {
+    text-decoration: bold;
+    color: #666666;
+}
+.leftylinks {
+    list-style-type: none;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 1em 0 2em 0;
+
+}
+.leftylinks li {
+    padding-top: 1em;
+}
+.elsewhere {
+    list-style-type: none;
+    padding: 0;
+}
+.elsewhere li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+#bodycopy {
+    float: left;
+    width: 70%;
+    padding-right: 5%;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+}
+
+
 
 
 
