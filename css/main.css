@@ -100,6 +100,37 @@ textarea {
 #container {
     width: 100%;
 }
+#atthetop {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    height: 2em;
+    width: 12em;
+    z-index: 9001;
+    text-align: left;
+    color: white;
+}
+#atthetop img {
+    width: 2em;
+    height: 2em;
+    border-radius: 3px;
+}
+
+#atthetop div {
+    float: left;
+    padding-left: .5em;
+}
+#atthetop div p {
+    background-color: #629FC8;
+    border-radius: 2px;
+    margin: 0;
+    padding: .5em;
+    font-size: .75em;
+}
+#atthetop .codepentext p {
+    background-color: #304760;
+
+}
 
 header {
     background: url('hops2.jpg');
@@ -171,6 +202,13 @@ h2 {
     display: inline-block;
     padding: 0 1em 0 0;
 }
+.elsewhere a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+.elsewhere a:hover {
+    color: #666666;
+}
 #bodycopy {
     float: left;
     width: 70%;
@@ -178,11 +216,32 @@ h2 {
     text-align: left;
 }
 
-h3 {
+#bodycopy .articles h3 a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3em;
+    text-decoration: none;
+    color: black;
 }
-
+.articlefooter {
+    
+}
+.sharepost {
+    color: #AAAAAA;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    width: 3.5em;
+    
+}
+.sharepost a {
+    display: inline-block;
+    padding-left: .25em;
+    padding-right: .25em;
+    color: #AAAAAA;
+    margin: 0;
+}
+.sharepost a:hover {
+    color: #666666;
+}
 
 
 
