@@ -99,6 +99,7 @@ textarea {
 
 #container {
     width: 100%;
+
 }
 #atthetop {
     position: fixed;
@@ -114,6 +115,10 @@ textarea {
     width: 2em;
     height: 2em;
     border-radius: 3px;
+}
+#atthetop a {
+    text-decoration: none;
+    color: white;
 }
 
 #atthetop div {
@@ -175,6 +180,10 @@ h2 {
     position: relative;
 
 }
+#leftbar a {
+    color: #AAAAAA;
+    text-decoration: none;
+}
 .picofme {
     border-radius: 50%;
     width: 6em;
@@ -214,6 +223,7 @@ h2 {
     width: 70%;
     padding-right: 5%;
     text-align: left;
+    padding-top: 2em;
 }
 
 #bodycopy .articles h3 a {
@@ -242,7 +252,30 @@ h2 {
 .sharepost a:hover {
     color: #666666;
 }
+.clearfix {
+    padding: 5em;
+    border-bottom: 1px solid #EEEEEE;
 
+}
+#realfooter {
+    width: 50%;
+    margin: 2em auto;
+    padding-top: 2em;
+}
+.leftfoot {
+    float: left;    
+}
+.footpic {
+    border-radius: 50%;
+    width: 4em;
+}
+.rightfoot {
+    float: left;
+    color: #AAAAAA;
+    width: 70%;
+    padding-left: 10%;
+
+}
 
 
 
