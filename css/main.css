@@ -211,11 +211,11 @@ h2 {
     display: inline-block;
     padding: 0 1em 0 0;
 }
-.elsewhere a {
+.elsewhere a i {
     color: #AAAAAA;
     text-decoration: none;
 }
-.elsewhere a:hover {
+.elsewhere li a i:hover {
     color: #666666;
 }
 #bodycopy {
@@ -224,6 +224,7 @@ h2 {
     padding-right: 5%;
     text-align: left;
     padding-top: 2em;
+    overflow: hidden;
 }
 
 #bodycopy .articles h3 a {
@@ -232,8 +233,16 @@ h2 {
     text-decoration: none;
     color: black;
 }
+.articles {
+}
+#bodycopy .articles:nth-child(n+2) {
+    margin-top: 2em;    
+    border-top: 1px solid #EEEEEE;
+}
+
 .articlefooter {
-    
+    margin: 0;
+    padding: 0;
 }
 .sharepost {
     color: #AAAAAA;
@@ -252,10 +261,14 @@ h2 {
 .sharepost a:hover {
     color: #666666;
 }
+datetime {
+    float: right;
+    color: #AAAAAA;
+    margin-top: -1.5em;
+}
 .clearfix {
     padding: 5em;
     border-bottom: 1px solid #EEEEEE;
-
 }
 #realfooter {
     width: 50%;
@@ -276,6 +289,7 @@ h2 {
     padding-left: 10%;
 
 }
+
 
 
 
