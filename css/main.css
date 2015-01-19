@@ -23,11 +23,7 @@ html {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -83,7 +79,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Browse Happy prompt
+   Browse Happy prompt and MOBILE
    ========================================================================== */
 
 .browsehappy {
@@ -91,6 +87,39 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+@media only screen and (max-device-width: 750px) {
+    
+    #container .headtext {
+        display: none;
+    }
+    #container h1 {
+        display: none;
+    }
+    #atthetop {
+        display: none;
+    }
+    #contentcontainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #leftbar {
+        width: 100%;
+        float: none;
+    }
+    #bodycopy .articles h3 a {
+        font-size: 1.5em;
+    }
+    #contentcontainer {
+        width: 100%;
+    }
+    #bodycopy {
+        width: 100%;
+    }
+    #realfooter {
+        display: none;
+    }
 }
 
 /* ==========================================================================
@@ -291,15 +320,7 @@ datetime {
 }
 
 
-
-
-
-
-
-
-
-
-
+    
 /* ==========================================================================
    Helper classes
    ========================================================================== */
