@@ -79,7 +79,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Browse Happy prompt and MOBILE
+   Browse Happy prompt
    ========================================================================== */
 
 .browsehappy {
@@ -89,38 +89,7 @@ textarea {
     padding: 0.2em 0;
 }
 
-@media only screen and (max-device-width: 750px) {
-    
-    #container .headtext {
-        display: none;
-    }
-    #container h1 {
-        display: none;
-    }
-    #atthetop {
-        display: none;
-    }
-    #contentcontainer {
-        width: 90%;
-        margin: 0 auto;
-    }
-    #leftbar {
-        width: 100%;
-        float: none;
-    }
-    #bodycopy .articles h3 a {
-        font-size: 1.5em;
-    }
-    #contentcontainer {
-        width: 100%;
-    }
-    #bodycopy {
-        width: 100%;
-    }
-    #realfooter {
-        display: none;
-    }
-}
+
 
 /* ==========================================================================
    Author's custom styles
@@ -317,6 +286,38 @@ datetime {
     width: 70%;
     padding-left: 10%;
 
+}
+@media only screen and (max-device-width: 750px) {
+    
+    #container .headtext {
+        display: none;
+    }
+    #container h1 {
+        display: none;
+    }
+    #atthetop {
+        display: none;
+    }
+    #contentcontainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #leftbar {
+        width: 100%;
+        float: none;
+    }
+    #bodycopy .articles h3 a {
+        font-size: 1.5em;
+    }
+    #contentcontainer {
+        width: 100%;
+    }
+    #bodycopy {
+        width: 100%;
+    }
+    #realfooter {
+        display: none;
+    }
 }
 
 
