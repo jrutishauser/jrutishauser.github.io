@@ -2,7 +2,7 @@
 
 <header>
 	<div class='first'>
-    	<h1>hi. my name is Jon Rutishauser.</h1>
+    	<h1>Hello. My name is Jon Rutishauser</h1>
 	</div>
 	<div class='second'>
 		<div class='insecond'>	
@@ -14,21 +14,24 @@
 		</div><!--insecondtoo-->
 	</div><!--second-->
 	<div class='third'>
-		<p>I live in sunny Orlando Florida.</p>	
+		<p>I live in sunny Orlando, Florida.</p>	
 	</div>
 	<div class='fourth'>
-		<p>click below to learn more about me</p>
+		<p>Click below to learn more about me.</p>
 	</div>
 </header>
 <nav>
 	<ul>
-			<li><a href='#'>ABOUT</a></li>
-			<li><a href='#'>WORK</a></li>
-			<li><a href='#'>BLOG</a></li>
+			<li><a ui-sref='home.about'>ABOUT</a></li>
+			<li><a ui-sref='home.work'>WORK</a></li>
+			<li><a ui-sref='home.blog'>BLOG</a></li>
 	</ul>
 </nav>
 </div><!--container-->
 <div ui-view></div>
+<section>
+		<p>some text</p>
+</section>
 <div class="footer">
 	<p>some awesome line of text here</p>
 </div><!--footer-->

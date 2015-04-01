@@ -1,4 +1,17 @@
+$hfont: 'Oswald', sans-serif;
+$bfont: 'Roboto Condensed', sans-serif;
+
+
 body {
+	h1, h2, h3, h4 {
+		font-family: $hfont;
+	}
+	span, p, li, a {
+		font-family: $bfont;
+	}
+	p {
+		line-height: 1.35;
+	}
 	padding: 0;
 	margin: 0;
   	background-color: black;
@@ -13,6 +26,9 @@ body {
 }//container
 header {
 	padding-top: 20vh;
+	p {
+		line-height: 1;
+	}
 	.first {
 		display: table;
 		margin: 0 auto;
@@ -26,11 +42,13 @@ header {
 			margin: 0 auto;
 			color: white;
 			display: table;
+			p {
+				line-height: 0.9;
+			}
 			.insecond {
 				display: inline-block;
 				text-align: center;
 				padding: 0.5vw 1.5vw 0.5vw 1.5vw;
-				background: url('/assets/images/star.jpg');
 				p {
 					margin: 0;
 					font-size: 2.5vw;
@@ -62,7 +80,7 @@ header {
 			p {
 				margin: 0;
 			}
-	}
+	}//fourth
 }//header
 nav {
 	position: absolute;
@@ -84,26 +102,26 @@ nav {
 	}//li
 	}//ul
 	a {
-		font-family: sans-serif;
 		font-weight: bold;
 		margin: 0;
 		padding: 0;
 		width: 100%;
 		display: block;
 		font-size: 6vw;
-		padding-top: 5vw;
-		height: 10vw;
+		padding-top: 3vw;
+		height: 8vw;
   		text-decoration: none;
 		color: darkblue;
-		background-color: rgba(255, 255, 255, 0.4);
+		background-color: rgba(0, 0, 0, 0.4);
 	}//a
 	a:hover {
 		color: white;
 		background-color: rgba(0, 0, 0, 0.4);
 	}
 	li:first-child:hover {
-		background: url('/assets/images/fam.jpg');
+		background: url('/assets/images/aap.jpg');
 		background-size: cover;
+		background-position: 10% 20%;
 	}
 	li:nth-child(2):hover {
 		background: url('/assets/images/work.jpg');
@@ -116,7 +134,100 @@ nav {
 		background-position: 60% 30%;
 	}
 }//nav
-
+.about {
+	color: white;
+	background: url('/assets/images/wood.jpg');
+	padding-top: 5vw;
+	width: 100%;
+	h3 {
+		margin-top: 0;
+		margin-bottom: 5vw;
+		text-align: center;
+	}
+	.textbody {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+.work {
+	color: white;
+	width: 100%;
+	padding-top: 5vw;
+	background: url('/assets/images/wood.jpg');
+	h3 {
+		margin-bottom: 5vw;
+		margin-top: 0;
+		text-align: center;
+	}
+	.hausbrewer {
+		padding: 0;
+		display: table;
+		margin: 0 auto;
+	}
+	.workimg {
+		margin: 0;
+		display: inline-block;
+		width: 30vw;
+		vertical-align: top;
+		img {
+			width: 100%;
+		}
+	}
+	.workdesc {
+		margin: 0;
+		width: 50vw;
+		display: inline-block;
+		vertical-align: top;
+		p {
+			font-size: 1.25em;
+		}
+		h3 {
+			font-size: 5vw;	
+			display: inline;
+			margin: 0;
+			margin-left: 2vw;
+		}
+		img {
+			display: inline;
+			height: 3.5vw;
+		}
+		h4 {
+			font-size: 2vw;
+		}
+		.icons {
+			padding-left: 0;
+			li {
+				list-style-type: none;
+				display: inline;
+			}	
+		}//icons
+		.facts {
+			padding-left: 0;
+			li {
+				list-style-type: none;
+				margin-bottom: 0.5em;
+				font-size: 1.25em;
+			}
+			a {
+				color: white;
+			}
+			a:hover {
+				text-decoration: overline;
+			}
+		}
+	}
+}
+.blog {
+	color: white;
+	width: 100%;
+	padding-top: 5vw;
+	background: url('/assets/images/wood.jpg');
+	h3 {
+		margin-bottom: 5vw;
+		margin-top: 0;
+		text-align: center;
+	}
+}
 
 // injector
 // endinjector
