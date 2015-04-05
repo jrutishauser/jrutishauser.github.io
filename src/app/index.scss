@@ -23,6 +23,23 @@ body {
   	margin: 0;
   	background: url('/assets/images/fence.jpg') repeat-x fixed;
 	background-size: auto 100%;
+	.social {
+		position: absolute;
+		top: 0;
+		right: 2vw;
+		color: white;
+		a {
+			color: white;
+		}
+		ul {
+			li {
+				list-style-type: none;
+				display: inline;
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+			}
+		}	
+	}
 }//container
 header {
 	padding-top: 20vh;
@@ -111,7 +128,7 @@ nav {
 		padding-top: 3vw;
 		height: 8vw;
   		text-decoration: none;
-		color: darkblue;
+		color: white;
 		background-color: rgba(0, 0, 0, 0.4);
 	}//a
 	a:hover {
@@ -139,14 +156,32 @@ nav {
 	background: url('/assets/images/wood.jpg');
 	padding-top: 5vw;
 	width: 100%;
-	h3 {
-		margin-top: 0;
-		margin-bottom: 5vw;
-		text-align: center;
-	}
-	.textbody {
-		width: 50%;
+	padding-bottom: 8vw;
+	.bodycontent {
+		width: 70%;
 		margin: 0 auto;
+	}
+	.aboutimages {
+		width: 20%;
+		display: inline-block;
+		img {
+			width: 100%;
+			border: 3px solid white;
+			margin-top: 1vw;
+		}
+	}
+	.aboutwords {
+		display: inline-block;
+		width: 75%;
+		float: right;
+		h3 {
+			margin-bottom: default;
+			text-align: center;
+			margin-top: 5vw;
+		}
+	}
+	.bot {
+		clear: both;
 	}
 }
 .work {
@@ -154,6 +189,7 @@ nav {
 	width: 100%;
 	padding-top: 5vw;
 	background: url('/assets/images/wood.jpg');
+	padding-bottom: 8vw;
 	h3 {
 		margin-bottom: 5vw;
 		margin-top: 0;
@@ -222,6 +258,7 @@ nav {
 	width: 100%;
 	padding-top: 5vw;
 	background: url('/assets/images/wood.jpg');
+	padding-bottom: 8vw;
 	h3 {
 		margin-bottom: 5vw;
 		margin-top: 0;
