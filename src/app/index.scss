@@ -1,7 +1,6 @@
 $hfont: 'Oswald', sans-serif;
 $bfont: 'Roboto Condensed', sans-serif;
 
-
 body {
 	h1, h2, h3, h4 {
 		font-family: $hfont;
@@ -195,15 +194,17 @@ nav {
 		margin-top: 0;
 		text-align: center;
 	}
-	.hausbrewer {
+	.workitem {
 		padding: 0;
 		display: table;
 		margin: 0 auto;
+		margin-bottom: 7em;
 	}
 	.workimg {
 		margin: 0;
+		margin-right: 2em;
 		display: inline-block;
-		width: 30vw;
+		width: 20vw;
 		vertical-align: top;
 		img {
 			width: 100%;
@@ -216,6 +217,9 @@ nav {
 		vertical-align: top;
 		p {
 			font-size: 1.25em;
+		}
+		a {
+		color: white;
 		}
 		h3 {
 			font-size: 5vw;	
@@ -265,6 +269,108 @@ nav {
 		text-align: center;
 	}
 }
+.footer {
+	color: white;
+	background: url('/assets/images/cement.jpg') fixed;
+	background-size: cover;
+	padding-bottom: 6em;
+	a {
+		color: white;
+	}
+	.divider {
+		border-top: 4px solid white;
+		width: 100%;
+		text-align: center;
+		opacity: 0.2;
+		margin-bottom: 3em;
+			span {
+				display: inline-block;
+				width: 30%;
+				font-size: 10vw;
+			}
+		}
+	.social {
+		margin: 0 auto;
+		display: table;
+		top: 0;
+		right: 2vw;
+		color: white;
+		a {
+			color: white;
+		}
+		ul {
+			padding: 0;
+			li {
+				list-style-type: none;
+				display: inline;
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+			}
+		}	
+	}
+	img {
+		display: block;
+		border-radius: 100%;
+		margin: 0 auto;
+		width: 6em;
+		margin-bottom: 2em;
+	}
+	p {
+		margin: 0 auto;
+		width: 50%;
+		margin-bottom: 2em;
+	}
+}
 
+@media only screen and (max-width : 798px){
+	.container {
+		height: 80vh;
+		}
+		.divider {
+		}
+		.footer {
+			p {
+			width: 100%;
+		}
+		}
+		.about {
+		.bodycontent {
+			width: 100%;
+		}	
+		.aboutimages {
+				display: none;
+		}
+		.aboutwords {
+			width: 90%;
+			float: none;
+			padding: 1em;
+			p {
+				width: 100%;
+			}
+		}
+	}
+	.work {
+		.workimg {
+				display: block;
+				width: 100%;
+				img {
+					width: 90%;
+				}
+			}
+		.workdesc {
+				h3 {
+					font-size: 10vw;
+				}
+				h4 {
+					font-size: 6vw;
+				}
+				img {
+					height: 10vw;
+				}
+				display: block;
+				width: 100%;
+			}
+	}
+	}
 // injector
 // endinjector

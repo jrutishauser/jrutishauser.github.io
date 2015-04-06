@@ -156,14 +156,16 @@ nav {
     margin-bottom: 5vw;
     margin-top: 0;
     text-align: center; }
-  .work .hausbrewer {
+  .work .workitem {
     padding: 0;
     display: table;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 7em; }
   .work .workimg {
     margin: 0;
+    margin-right: 2em;
     display: inline-block;
-    width: 30vw;
+    width: 20vw;
     vertical-align: top; }
     .work .workimg img {
       width: 100%; }
@@ -174,6 +176,8 @@ nav {
     vertical-align: top; }
     .work .workdesc p {
       font-size: 1.25em; }
+    .work .workdesc a {
+      color: white; }
     .work .workdesc h3 {
       font-size: 5vw;
       display: inline;
@@ -210,3 +214,76 @@ nav {
     margin-bottom: 5vw;
     margin-top: 0;
     text-align: center; }
+
+.footer {
+  color: white;
+  background: url('/assets/images/cement.jpg') fixed;
+  background-size: cover;
+  padding-bottom: 6em; }
+  .footer a {
+    color: white; }
+  .footer .divider {
+    border-top: 4px solid white;
+    width: 100%;
+    text-align: center;
+    opacity: 0.2;
+    margin-bottom: 3em; }
+    .footer .divider span {
+      display: inline-block;
+      width: 30%;
+      font-size: 10vw; }
+  .footer .social {
+    margin: 0 auto;
+    display: table;
+    top: 0;
+    right: 2vw;
+    color: white; }
+    .footer .social a {
+      color: white; }
+    .footer .social ul {
+      padding: 0; }
+      .footer .social ul li {
+        list-style-type: none;
+        display: inline;
+        margin-left: 0.5em;
+        margin-right: 0.5em; }
+  .footer img {
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 6em;
+    margin-bottom: 2em; }
+  .footer p {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 2em; }
+
+@media only screen and (max-width: 798px) {
+  .container {
+    height: 80vh; }
+  .footer p {
+    width: 100%; }
+  .about .bodycontent {
+    width: 100%; }
+  .about .aboutimages {
+    display: none; }
+  .about .aboutwords {
+    width: 90%;
+    float: none;
+    padding: 1em; }
+    .about .aboutwords p {
+      width: 100%; }
+  .work .workimg {
+    display: block;
+    width: 100%; }
+    .work .workimg img {
+      width: 90%; }
+  .work .workdesc {
+    display: block;
+    width: 100%; }
+    .work .workdesc h3 {
+      font-size: 10vw; }
+    .work .workdesc h4 {
+      font-size: 6vw; }
+    .work .workdesc img {
+      height: 10vw; } }
