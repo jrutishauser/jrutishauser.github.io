@@ -1,10 +1,17 @@
 <section class='blog'>
 
 <h3>blog</h3>
-<a class="embedly-card" 
-href="http://jrutishauser.tumblr.com/post/115685265299/starting-the-javscripts">
-		Starting the Javscripts</a>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8">
-</script>
-
+<article>
+	<ul id="postscontainer">
+		<li ng-repeat="post in blog.posts">
+         <div>
+		<a ng-href='{{post.post_url}}'>
+		<h4>{{post.title}}</h4></a>
+	<blockquote>{{post.description.substring(39, post.description.length -13)}}
+		{{post.body.substring(3, post.body.length -4)}}</blockquote>
+		<p>{{post.date}}</p>
+	</div>
+	</li> 
+	</ul>
+</article>
 </section><!--blog-->
