@@ -214,6 +214,15 @@ nav {
     margin-bottom: 5vw;
     margin-top: 0;
     text-align: center; }
+  .blog ul {
+    list-style-type: none; }
+  .blog h4 {
+    color: white;
+    font-size: 2vw; }
+  .blog a {
+    text-decoration: none; }
+  .blog .seemore {
+    color: gray; }
 
 .footer {
   color: white;
