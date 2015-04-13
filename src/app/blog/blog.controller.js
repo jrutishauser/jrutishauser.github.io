@@ -5,7 +5,7 @@ angular.module('jrutishausergithubio')
  	var self = this;
 
 
-		$http.jsonp("http://api.tumblr.com/v2/blog/jrutishauser.tumblr.com/posts?api_key=cNr2mxUgne0vNkFP0EZ2rqc4Vs8yw7z850DcuaV68oHgD3rrov&callback=JSON_CALLBACK")
+		$http.jsonp("http://api.tumblr.com/v2/blog/jrutishauser.tumblr.com/posts?api_key=cNr2mxUgne0vNkFP0EZ2rqc4Vs8yw7z850DcuaV68oHgD3rrov&filter=text&limit=3&callback=JSON_CALLBACK")
 .success(function(data) {
 	console.log(data);
 	self.posts = data.response.posts; 
