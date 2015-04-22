@@ -1,0 +1,83 @@
+$bgcolor: #111;
+$txtcolor: #FFF;
+$mainfont: 'Roboto Condensed', sans-serif;
+body {
+	margin-top: 10%;
+	background-color: $bgcolor;
+	font-family: $mainfont;
+}//body
+.container {
+	width: 100%;
+	background-color: $bgcolor;
+}//container
+.tilecont {
+	width: 98%;
+	margin: 0 auto;
+	padding-top: 5px;
+	text-align: center;
+}//tilecont
+.singletile {
+	display: inline-block;
+	width: 45%;
+	padding-top: 45%;
+	position: relative;
+	text-decoration: none;
+	color: $txtcolor;
+	background-color: darkblue;
+	div {
+		position: absolute;
+		top: 0;
+		background-color: #000;
+		opacity: 0.3;
+		width: 100%;
+		padding-top: 100%;
+		z-index: 2;
+	}//div for overlay of tile
+	.tilecontents {
+		position: absolute;
+		bottom: 0;
+		left: 0.25em;
+		font-size: 1em;
+		margin: 0;
+		z-index: 9;
+	}//tilecontents
+}//singletile
+.singletile:hover div {
+	opacity: 0;
+}
+.singletile:hover .tilecontents {
+	color: #111;
+}
+.singletile:first-child {
+	background: url('/assets/images/meandaverie.jpg');
+	background-size: cover;
+}
+.singletile:nth-child(4) {
+	background: url('/assets/images/hausbrewer2.png');
+	background-size: cover;
+}
+.singletile:nth-child(5) {
+	background: url('/assets/images/susannabot.jpg');
+	background-size: cover;
+}
+.singletile:nth-child(6) {
+	background: url('/assets/images/colorclock.jpg');
+	background-size: cover;
+}
+
+//media queries for desktop size
+
+@media (min-width:800px){
+.tilecont {
+	width: 80%;
+	}
+.singletile {
+	width: 30%;
+	padding-top: 30%;
+	font-size: 2em;
+	}
+}
+
+
+// injector
+// endinjector
