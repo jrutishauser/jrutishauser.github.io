@@ -146,6 +146,45 @@ header {
 	background: url('/assets/images/snook.jpg');
    	background-size: cover;	
 }
+.hausbrewer.singletile:nth-child(2) {
+	background: url('/assets/images/phonehaus.jpg');
+	background-size: cover;
+}
+.hausbrewer.singletile:nth-child(3) {
+	background: url('/assets/images/work.jpg');
+	background-size: cover;
+	animation-name: none;
+}
+.hausbrewer.singletile:nth-child(5) {
+	background: url('/assets/images/slider.jpg');
+   	background-size: cover;
+	margin-top: 0.5%;
+	animation-name: slide;	
+	animation-duration: 10s;
+	animation-direction: normal;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+.susannabot.singletile:nth-child(2) {
+	background: url('/assets/images/susannabot.jpg');
+	background-size: cover;
+}
+.susannabot.singletile:nth-child(3) {
+	background: url('/assets/images/work.jpg');
+	background-size: cover;
+	animation-name: none;
+}
+.icons {
+	padding-left: 0;
+	li {
+		list-style-type: none;
+		display: inline;
+			img {
+				height: 4vw;
+			}
+		}	
+}//icons
+
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
   left: 0;
@@ -158,9 +197,9 @@ header {
 
 [ui-view].ng-enter {
   opacity: 0;
-  -webkit-transform:scale3d(0.5, 0.5, 0.5);
-  -moz-transform:scale3d(0.5, 0.5, 0.5);
-  transform:scale3d(0.5, 0.5, 0.5);
+  -webkit-transform:scale3d(1.5, 1.5, 1.5);
+  -moz-transform:scale3d(1.5, 1.5, 1.5);
+  transform:scale3d(1.5, 1.5, 1.5);
 }
 
 [ui-view].ng-enter-active {

@@ -13,6 +13,18 @@ angular.module('jrutishausergithubio', ['ngAnimate', 'ngSanitize', 'ui.router'])
 	  	url: '/about',
 	  	templateUrl: 'app/about/about.html'
 	  	})
+	  .state('hausbrewer', {
+	  	url: '/hausbrewer',
+	  	templateUrl: 'app/hausbrewer/hausbrewer.html'
+	  	})
+	  .state('susannabot', {
+	  	url: '/susannabot',
+	  	templateUrl: 'app/susannabot/susannabot.html'
+	  	})
+	  .state('colorclock', {
+	  	url: '/colorclock',
+	  	templateUrl: 'app/colorclock/colorclock.html'
+	  	})
 	  ;
 
     $urlRouterProvider.otherwise('/');
