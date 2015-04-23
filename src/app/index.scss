@@ -5,7 +5,6 @@ $mainfont: 'Roboto Condensed', sans-serif;
 $rollcolor: #FFF;
 $tilebg: #444;
 body {
-	margin-top: 10%;
 	background-color: $bgcolor;
 	font-family: $mainfont;
 }//body
@@ -142,8 +141,10 @@ header {
 	background: url('/assets/images/allyandme.jpg');
 	background-size: cover;
 }
-.about .singletile:nth-child(3) {
-	background: $bgcolor; 
+.about .singletile:nth-child(4) {
+	margin-top: 0.5%;
+	background: url('/assets/images/snook.jpg');
+   	background-size: cover;	
 }
 [ui-view].ng-enter, [ui-view].ng-leave {
   position: absolute;
@@ -200,7 +201,7 @@ header {
 .tilecont.about {
 	.aboutbody {
 		.abouttext {
-			font-size: 1.5em;
+			font-size: 1.25em;
 		}
 	}
 }
