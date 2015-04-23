@@ -122,6 +122,10 @@ header {
 	background: url('/assets/images/colorclock.jpg');
 	background-size: cover;
 }
+.singletile:nth-child(8) {
+	background: url('/assets/images/blog.jpg');
+	background-size: cover;
+}
 .tilecont.about {
 	text-align: left;
 	.aboutbody {
@@ -170,6 +174,15 @@ header {
 	background-size: cover;
 }
 .susannabot.singletile:nth-child(3) {
+	background: url('/assets/images/work.jpg');
+	background-size: cover;
+	animation-name: none;
+}
+.colorclock.singletile:nth-child(2) {
+	background: url('/assets/images/colorclock.jpg');
+	background-size: cover;
+}
+.colorclock.singletile:nth-child(3) {
 	background: url('/assets/images/work.jpg');
 	background-size: cover;
 	animation-name: none;
