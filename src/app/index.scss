@@ -1,6 +1,8 @@
 $bgcolor: #111;
 $txtcolor: #FFF;
 $mainfont: 'Roboto Condensed', sans-serif;
+$rollcolor: #FFF;
+$tilebg: #444;
 body {
 	margin-top: 10%;
 	background-color: $bgcolor;
@@ -11,27 +13,37 @@ body {
 	background-color: $bgcolor;
 }//container
 .tilecont {
-	width: 98%;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 5px;
 	text-align: center;
 }//tilecont
 .singletile {
 	display: inline-block;
-	width: 45%;
-	padding-top: 45%;
+	text-align: left;
+	width: 48%;
+	padding-top: 48%;
 	position: relative;
 	text-decoration: none;
 	color: $txtcolor;
-	background-color: darkblue;
+	background-color: $tilebg;
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	span {
+		position: absolute;
+		bottom: 1.5em;
+		left: 0.25em;
+		display: none;
+		color: $rollcolor;
+	}
 	div {
 		position: absolute;
 		top: 0;
 		background-color: #000;
-		opacity: 0.3;
+		opacity: 0;
 		width: 100%;
 		padding-top: 100%;
-		z-index: 2;
+		transition: opacity 0.5s;
 	}//div for overlay of tile
 	.tilecontents {
 		position: absolute;
@@ -39,30 +51,124 @@ body {
 		left: 0.25em;
 		font-size: 1em;
 		margin: 0;
-		z-index: 9;
+		z-index: 9000;
 	}//tilecontents
 }//singletile
 .singletile:hover div {
-	opacity: 0;
+	opacity: 0.6;
 }
 .singletile:hover .tilecontents {
-	color: #111;
+	color: $rollcolor;
+}
+.singletile:hover span {
+	display: block;
 }
 .singletile:first-child {
 	background: url('/assets/images/meandaverie.jpg');
 	background-size: cover;
 }
+.singletile:nth-child(2) {
+	background: url('/assets/images/wwkayak.jpg');
+	background-size: cover;
+}
+.singletile:nth-child(3) {
+	background: url('/assets/images/slider.jpg');
+	background-size: cover;
+	animation-name: slide;
+	animation-duration: 10s;
+	animation-direction: normal;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+@keyframes slide {
+  0% {background-position:0 0;}
+  10% {background-position:0 0;}
+  20% {background-position:25% 0;}
+  30% {background-position:25% 0;}
+  40% {background-position:50% 0;}
+  50% {background-position:50% 0;}
+  60% {background-position:75% 0;}
+  70% {background-position:75% 0;}
+  80% {background-position:100% 0;}
+  90% {background-position:100% 0;}
+  100% {background-position:0 0;}
+}
 .singletile:nth-child(4) {
-	background: url('/assets/images/hausbrewer2.png');
+	background: url('/assets/images/work.jpg');
 	background-size: cover;
 }
 .singletile:nth-child(5) {
-	background: url('/assets/images/susannabot.jpg');
+	background: url('/assets/images/hausbrewer2.png');
 	background-size: cover;
 }
 .singletile:nth-child(6) {
+	background: url('/assets/images/susannabot.jpg');
+	background-size: cover;
+}
+.singletile:nth-child(7) {
 	background: url('/assets/images/colorclock.jpg');
 	background-size: cover;
+}
+.tilecont.about {
+	text-align: left;
+	.aboutbody {
+		margin-left: 0.3%;
+		margin-top: 0.2%;
+		width: 97.5%;
+		padding-top: 2em;
+		background-color: #DDD;
+		.abouttext {
+			margin: 0;
+			margin-bottom: 1em;
+			font-size: 1em;
+		}
+	}
+}//about
+.about .singletile:nth-child(2) {
+	background: url('/assets/images/allyandme.jpg');
+	background-size: cover;
+}
+.about .singletile:nth-child(3) {
+	background: $bgcolor; 
+}
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/  
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
 }
 
 //media queries for desktop size
@@ -72,11 +178,20 @@ body {
 	width: 80%;
 	}
 .singletile {
-	width: 30%;
-	padding-top: 30%;
+	width: 32%;
+	padding-top: 32%;
 	font-size: 2em;
 	}
+	
+.tilecont.about {
+	.aboutbody {
+		.abouttext {
+			font-size: 1.5em;
+		}
+	}
 }
+}//desktopmediafin
+
 
 
 // injector

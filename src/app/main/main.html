@@ -1,32 +1,48 @@
 <div class="container">
 	<div class='tilecont'>	
 		<a href='#' class='singletile'>
-			<p class='tilecontents'>Hello<br />I'm Jon</p>
+				<p class='tilecontents'>Hello.<br />My name is Jon.<br />
+				I'm a Front End Developer.</p>
 			<div></div>
-		</a>
-		<a href='#' class='singletile'>
+		</a><a href='#' ui-sref='about' class='singletile'>
 			<div></div>
+			<span>click here to learn more,</span>
 			<p class='tilecontents'>About Me</p>
-		</a>
-		<a href='#' class='singletile'>
+		</a><a href='#' class='singletile'>
 			<div></div>
+			<span>
+				Javascript<br />
+				Angular<br />
+				HTML<br />
+				Sass<br />
+				Vim</br>
+				to name a few...
+			</span>
+			<p class='tilecontents'>I love building with</p>
+		</a><a href='#' class='singletile'>
+			<div></div>
+			<span>click a tile to view my</span>
 			<p class='tilecontents'>Past Work</p>
-		</a>
-		<a href='#' class='singletile'>
+		</a><a href='#' class='singletile'>
 			<div></div>
+			<span>click to see my project:</span>
 			<p class='tilecontents'>hausbrewer</p>
-		</a>
-		<a href='#' class='singletile'>
+		</a><a href='#' class='singletile'>
 			<div></div>
+			<span>click to see my project:</span>
 			<p class='tilecontents'>susannabot</p>
-		</a>
-		<a href='#' class='singletile'>
+		</a><a href='#' class='singletile'>
 			<div></div>
+			<span>click to see my project:</span>
 			<p class='tilecontents'>color clock</p>
-		</a>
-		<a href='#' class='singletile'>
+		</a><a href='#' class='singletile'>
 			<div></div>
+			<span>Last tiles are my recent</span>
 			<p class='tilecontents'>blog posts</p>
+		</a><a href='#' class='singletile' ng-repeat='post in main.posts'>
+			<div></div>
+			<span>Read tumblr entry:</span>
+			<p class='tilecontents'>{{post.title}}</p>
 		</a>
 
 	</div><!--tilecontainer-->
