@@ -25,8 +25,11 @@ angular.module('jrutishausergithubio', ['ngAnimate', 'ngSanitize', 'ui.router'])
 	  	url: '/colorclock',
 	  	templateUrl: 'app/colorclock/colorclock.html'
 	  	})
+	  .state('work', {
+	 	url: '/work',
+	 	templateUrl: 'app/work/work.html'
+	 	})
 	  ;
-
     $urlRouterProvider.otherwise('/');
   })
 ;

@@ -73,9 +73,6 @@ header {
 .singletile:hover .tilecontents {
 	color: $rollcolor;
 }
-.singletile:hover span {
-	display: block;
-}
 .singletile:first-child {
 	background: url('/assets/images/meandaverie.jpg');
 	background-size: cover;
@@ -84,7 +81,7 @@ header {
 	background: url('/assets/images/work.jpg');
 	background-size: cover;
 }
-.singletile:nth-child(3) {
+.main.singletile:nth-child(3) {
 	background: url('/assets/images/slider.jpg');
 	background-size: cover;
 	animation-name: slide;
@@ -93,11 +90,11 @@ header {
 	animation-timing-function: ease;
 	animation-iteration-count: infinite;
 }
-.singletile:nth-child(3):hover div{
+.main.singletile:nth-child(3):hover div{
 	opacity: 0;
 	cursor: default;
 }
-.singletile:nth-child(5):hover div{
+.main.singletile:nth-child(5):hover div{
 	opacity: 0;
 	cursor: default;
 }
@@ -118,7 +115,7 @@ header {
 	background: url('/assets/images/blog.jpg');
 	background-size: cover;
 }
-.singletile:nth-child(5) {
+.main.singletile:nth-child(5) {
 	background: url('/assets/images/meslider.jpg');
 	background-size: cover;
 	animation-name: slide2;
@@ -157,51 +154,103 @@ header {
 		}
 	}
 }//about
-.about .singletile:nth-child(2) {
+.about.singletile:nth-child(2) {
 	background: url('/assets/images/allyandme.jpg');
 	background-size: cover;
 }
-.about .singletile:nth-child(4) {
-	margin-top: 0.5%;
+.about.singletile:nth-child(3) {
 	background: url('/assets/images/snook.jpg');
-   	background-size: cover;	
+   	background-size: cover;
+	display: none;	
 }
-.hausbrewer.singletile:nth-child(2) {
+.about.singletile:nth-child(2):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.about.singletile:nth-child(3):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.work.singletile:first-child {
 	background: url('/assets/images/phonehaus.jpg');
 	background-size: cover;
 }
-.hausbrewer.singletile:nth-child(3) {
-	background: url('/assets/images/work.jpg');
-	background-size: cover;
-	animation-name: none;
-}
-.hausbrewer.singletile:nth-child(5) {
-	background: url('/assets/images/slider.jpg');
-   	background-size: cover;
-	margin-top: 0.5%;
-	animation-name: slide;	
-	animation-duration: 10s;
-	animation-direction: normal;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-}
-.susannabot.singletile:nth-child(2) {
+.work.singletile:nth-child(2) {
 	background: url('/assets/images/susannabot.jpg');
 	background-size: cover;
 }
-.susannabot.singletile:nth-child(3) {
-	background: url('/assets/images/work.jpg');
-	background-size: cover;
-	animation-name: none;
-}
-.colorclock.singletile:nth-child(2) {
+.work.singletile:nth-child(3) {
 	background: url('/assets/images/colorclock.jpg');
 	background-size: cover;
 }
-.colorclock.singletile:nth-child(3) {
-	background: url('/assets/images/work.jpg');
+.hausbrewer.singletile:nth-child(2) {
+	background: url('/assets/images/blog.jpg');
+	background-size: cover;
+}
+.hausbrewer.singletile:nth-child(3) {
+	background: url('/assets/images/phonehaus.jpg');
 	background-size: cover;
 	animation-name: none;
+}
+.hausbrewer.singletile:nth-child(4) {
+	background: url('/assets/images/hausbrewer2.png');
+	background-size: cover;
+	animation-name: none;
+	display: none;
+}
+.hausbrewer.singletile:nth-child(3):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.hausbrewer.singletile:nth-child(4):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.susannabot.singletile:nth-child(2) {
+	background: url('/assets/images/blog.jpg');
+	background-size: cover;
+}
+.susannabot.singletile:nth-child(3) {
+	background: url('/assets/images/susannabot.jpg');
+	background-size: cover;
+	animation-name: none;
+}
+.susannabot.singletile:nth-child(4) {
+	background: url('/assets/images/susannabot.jpg');
+	background-size: cover;
+	animation-name: none;
+	display: none;
+}
+.susannabot.singletile:nth-child(3):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.susannabot.singletile:nth-child(4):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.colorclock.singletile:nth-child(2) {
+	background: url('/assets/images/blog.jpg');
+	background-size: cover;
+}
+.colorclock.singletile:nth-child(3) {
+	background: url('/assets/images/colorclock.jpg');
+	background-size: cover;
+	animation-name: none;
+}
+.colorclock.singletile:nth-child(4) {
+	background: url('/assets/images/colorclock.jpg');
+	background-size: cover;
+	animation-name: none;
+	display: none;
+}
+.colorclock.singletile:nth-child(3):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.colorclock.singletile:nth-child(4):hover div{
+	opacity: 0;
+	cursor: default;
 }
 .icons {
 	padding-left: 0;
@@ -265,13 +314,24 @@ header {
 	padding-top: 32%;
 	font-size: 2em;
 	}
-	
 .tilecont.about {
 	.aboutbody {
 		.abouttext {
 			font-size: 1.25em;
 		}
 	}
+}
+.about.singletile:nth-child(3) {
+	display: inline-block;
+}
+.hausbrewer.singletile:nth-child(4) {
+	display: inline-block;
+}
+.susannabot.singletile:nth-child(4) {
+	display: inline-block;
+}
+.colorclock.singletile:nth-child(4) {
+	display: inline-block;
 }
 }//desktopmediafin
 
