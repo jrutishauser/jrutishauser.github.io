@@ -5,48 +5,23 @@
 		<h3>I live in sunny Orlando, Fl.</h3>
 	</header>
 	<div class='tilecont'>	
-		<a href='#' class='singletile'>
+		<a href='#' ui-sref='about' class='singletile'>
 			<div></div>
-		</a><a href='#' ui-sref='about' class='singletile'>
+			<p class='tilecontents'>About me</p>
+		</a><a href='#' ui-sref='work' class='singletile'>
 			<div></div>
-			<span>click here to learn more,</span>
-			<p class='tilecontents'>About Me</p>
+			<p class='tilecontents'>Some of my work</p>
 		</a><a href='#' class='singletile'>
 			<div></div>
-			<span>
-				Javascript<br />
-				Angular<br />
-				HTML<br />
-				Sass<br />
-				Vim</br>
-				to name a few...
-			</span>
 			<p class='tilecontents'>I love building with</p>
 		</a><a href='#' class='singletile'>
 			<div></div>
-			<span>click a tile to view my</span>
-			<p class='tilecontents'>Past Work</p>
-		</a><a href='#' ui-sref='hausbrewer' class='singletile'>
-			<div></div>
-			<span>click to see my project:</span>
-			<p class='tilecontents'>hausbrewer</p>
-		</a><a href='#' ui-sref='susannabot' class='singletile'>
-			<div></div>
-			<span>click to see my project:</span>
-			<p class='tilecontents'>susannabot</p>
-		</a><a href='#' ui-sref='colorclock' class='singletile'>
-			<div></div>
-			<span>click to see my project:</span>
-			<p class='tilecontents'>color clock</p>
+			<p class='tilecontents'>Blog posts</p>
 		</a><a href='#' class='singletile'>
 			<div></div>
-			<span>Last tiles are my recent</span>
-			<p class='tilecontents'>blog posts</p>
-		</a><a href='#' class='singletile' ng-repeat='post in main.posts'>
+		</a><a href='#' class='singletile'>
 			<div></div>
-			<span>Read tumblr entry:</span>
-			<p class='tilecontents'>{{post.title}}</p>
+			<p class='tilecontents'>Social</p>
 		</a>
-
 	</div><!--tilecontainer-->
 </div><!--container-->
