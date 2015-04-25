@@ -1,18 +1,16 @@
-<section class='blog'>
-
-<h3>Blog from Tumblr</h3>
-<article>
-	<ul id="postscontainer">
-		<li ng-repeat="post in blog.posts">
-         <div>
-		<a ng-href='{{post.post_url}}'>
-		<h4>{{post.title}}</h4></a>
-	<blockquote>{{post.description}}
-			{{post.body}} 
-			<a ng-href='{{post.post_url}}' class='seemore'>
-					(click here to see more on tumblr)</a></blockquote>
-	</div>
-	</li> 
-	</ul>
-</article>
-</section><!--blog-->
+<div class="container">
+	<header>
+		<h1>My last three blog posts</h1>
+		<h3>from tumblr</h3>
+	</header>
+	<div class='tilecont'>	
+		<a href='#' ui-sref='home' class='singletile blog'>
+			<div></div>
+			<p class='tilecontents'>Click here to go back</p>
+		</a><a ng-href='{{post.post_url}}' target='new' class='singletile blog' 
+				ng-repeat='post in blog.posts'>
+			<div></div>
+			<p class='tilecontents'>{{post.title}}</p>
+		</a>
+	</div><!--tilecontainer-->
+</div><!--container-->

@@ -1,5 +1,5 @@
 'use strict';
 
 angular.module('jrutishausergithubio')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($http) {
   });

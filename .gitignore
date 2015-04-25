@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-_site
-.sass-cache
-=======
+node_modules/
+bower_components/
+.sass-cache/
+.tmp/
+dist/
 .DS_Store
-.swa
-.swp
->>>>>>> playingwithjekyll
