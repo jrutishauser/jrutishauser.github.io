@@ -29,6 +29,16 @@ angular.module('jrutishausergithubio', ['ngAnimate', 'ngSanitize', 'ui.router'])
 	 	url: '/work',
 	 	templateUrl: 'app/work/work.html'
 	 	})
+	  .state('blog', {
+	  	url: '/blog',
+	  	templateUrl: 'app/blog/blog.html',
+		controller: 'BlogCtrl',
+		controllerAs: 'blog'
+	  })
+	 .state('social', {
+	 	url: '/social',
+	 	templateUrl: 'app/social/social.html'
+	 })
 	  ;
     $urlRouterProvider.otherwise('/');
   })
