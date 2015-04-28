@@ -218,7 +218,7 @@ header {
 	animation-name: none;
 }
 .susannabot.singletile:nth-child(4) {
-	background: url('/assets/images/susannabot.jpg');
+	background: url('/assets/images/susannabot2.png');
 	background-size: cover;
 	animation-name: none;
 	display: none;
@@ -241,7 +241,7 @@ header {
 	animation-name: none;
 }
 .colorclock.singletile:nth-child(4) {
-	background: url('/assets/images/colorclock.jpg');
+	background: url('/assets/images/colorclock2.png');
 	background-size: cover;
 	animation-name: none;
 	display: none;
@@ -337,7 +337,7 @@ footer {
 	color: $txtcolor;
    	width: 78%;	
 	margin: 0 auto;
-	margin-top: 15vw;
+	margin-top: 10vw;
 	text-align: center;
 	.leftfoot {
 		width: 50%;
@@ -351,6 +351,9 @@ footer {
 		text-align: left;
 		display: inline-block;
 		padding-left: 1.5em;
+		span {
+			margin-left: 0.5em;
+		}
 		a {
 			color: $txtcolor;
 			text-decoration: none;
