@@ -336,7 +336,8 @@ header {
 footer {
 	color: $txtcolor;
    	width: 78%;	
-	margin: 15vw auto;
+	margin: 0 auto;
+	margin-top: 15vw;
 	text-align: center;
 	.leftfoot {
 		width: 50%;
@@ -350,7 +351,6 @@ footer {
 		text-align: left;
 		display: inline-block;
 		padding-left: 1.5em;
-		border-left: 1px solid #DDD;
 		a {
 			color: $txtcolor;
 			text-decoration: none;
