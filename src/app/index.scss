@@ -94,7 +94,7 @@ header {
 	opacity: 0;
 	cursor: default;
 }
-.main.singletile:nth-child(5):hover div{
+.main.singletile:nth-child(4):hover div{
 	opacity: 0;
 	cursor: default;
 }
@@ -111,11 +111,11 @@ header {
   90% {background-position:100% 0;}
   100% {background-position:0 0;}
 }
-.singletile:nth-child(4) {
+.singletile:nth-child(5) {
 	background: url('/assets/images/blog.jpg');
 	background-size: cover;
 }
-.main.singletile:nth-child(5) {
+.main.singletile:nth-child(4) {
 	background: url('/assets/images/meslider.jpg');
 	background-size: cover;
 	animation-name: slide2;
@@ -352,6 +352,8 @@ footer {
 		ul {
 			list-style-type: none;
 			padding: 0;
+			margin-top: 4em;
+			margin-bottom: 4em;
 		}
 		li {
 			margin-top: 0.5em;
@@ -389,8 +391,9 @@ footer {
 	display: inline-block;
 }
 footer {
-		text-align: left;
+		text-align: center;
 		p {
+			text-align: left;
 			display: block;
 			margin-right: 1em;
 		}
