@@ -43,11 +43,18 @@ header {
 	margin-left: 0.1em;
 	margin-right: 0.1em;
 	span {
+		display: table-cell;
 		position: absolute;
-		bottom: 1.5em;
-		left: 0.25em;
-		display: none;
+		opacity: 0;
+		top: 25%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		vertical-align: middle;
+		text-align: center;
+		width: 100%;
 		color: $rollcolor;
+		transition: opacity 0.75s;
 	}
 	div {
 		position: absolute;
@@ -73,6 +80,9 @@ header {
 .singletile:hover .tilecontents {
 	color: $rollcolor;
 }
+.singletile:hover span {
+	opacity: 0.8;
+}
 .singletile:first-child {
 	background: url('/assets/images/meandaverie.jpg');
 	background-size: cover;
@@ -94,7 +104,7 @@ header {
 	opacity: 0;
 	cursor: default;
 }
-.main.singletile:nth-child(5):hover div{
+.main.singletile:nth-child(4):hover div{
 	opacity: 0;
 	cursor: default;
 }
@@ -111,11 +121,11 @@ header {
   90% {background-position:100% 0;}
   100% {background-position:0 0;}
 }
-.singletile:nth-child(4) {
+.singletile:nth-child(5) {
 	background: url('/assets/images/blog.jpg');
 	background-size: cover;
 }
-.main.singletile:nth-child(5) {
+.main.singletile:nth-child(4) {
 	background: url('/assets/images/meslider.jpg');
 	background-size: cover;
 	animation-name: slide2;
@@ -183,6 +193,10 @@ header {
 }
 .work.singletile:nth-child(3) {
 	background: url('/assets/images/colorclock.jpg');
+	background-size: cover;
+}
+.work.singletile:nth-child(4) {
+	background: url('/assets/images/blog.jpg');
 	background-size: cover;
 }
 .hausbrewer.singletile:nth-child(2) {
@@ -339,18 +353,9 @@ footer {
 	margin: 0 auto;
 	margin-top: 10vw;
 	text-align: center;
-	.leftfoot {
-		width: 50%;
-		display: inline-block;
-		vertical-align: top;
-		p {
-			display: none;
+	p {
+		display: none;
 		}
-	}
-	.rightfoot {
-		text-align: left;
-		display: inline-block;
-		padding-left: 1.5em;
 		span {
 			margin-left: 0.5em;
 		}
@@ -361,11 +366,12 @@ footer {
 		ul {
 			list-style-type: none;
 			padding: 0;
+			margin-top: 4em;
+			margin-bottom: 4em;
 		}
 		li {
 			margin-top: 0.5em;
 		}
-	}
 }
 //media queries for desktop size
 
@@ -399,15 +405,21 @@ footer {
 	display: inline-block;
 }
 footer {
-	.leftfoot {
-		text-align: left;
+		text-align: center;
 		p {
+			text-align: left;
 			display: block;
 			margin-right: 1em;
 		}
-	}
-	.rightfoot {
-	}
+		ul {
+		text-align: center;	
+			li {
+				display: inline;
+				padding-left: 0.5em;
+				padding-right: 0.5em;
+			}
+		}
+		
 }
 }//desktopmediafin
 
