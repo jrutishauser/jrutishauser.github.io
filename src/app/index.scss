@@ -43,11 +43,18 @@ header {
 	margin-left: 0.1em;
 	margin-right: 0.1em;
 	span {
+		display: table-cell;
 		position: absolute;
-		bottom: 1.5em;
-		left: 0.25em;
-		display: none;
+		opacity: 0;
+		top: 25%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		vertical-align: middle;
+		text-align: center;
+		width: 100%;
 		color: $rollcolor;
+		transition: opacity 0.75s;
 	}
 	div {
 		position: absolute;
@@ -72,6 +79,9 @@ header {
 }
 .singletile:hover .tilecontents {
 	color: $rollcolor;
+}
+.singletile:hover span {
+	opacity: 0.8;
 }
 .singletile:first-child {
 	background: url('/assets/images/meandaverie.jpg');
