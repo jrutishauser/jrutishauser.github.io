@@ -4,6 +4,8 @@ $headingcolor: #FFF;
 $mainfont: 'Roboto Condensed', sans-serif;
 $rollcolor: #FFF;
 $tilebg: #444;
+$contentbrdr: #2c2c2c;
+$contentbg: #FFFFFF;
 body {
 	background-color: $bgcolor;
 	font-family: $mainfont;
@@ -156,13 +158,23 @@ header {
 		margin-top: 0.2%;
 		width: 97.5%;
 		padding-top: 2em;
-		background-color: #DDD;
+		background-color: $contentbg;
 		padding: 1em;
 		box-sizing: border-box;
+		border: 17px solid $contentbrdr;
 		.abouttext {
 			margin: 0;
 			margin-bottom: 1em;
 			font-size: 1em;
+		}
+		hr {
+			color: #a29e9f;
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
+		.goback {
+			display: block;
+			margin-top: 3em;
 		}
 	}
 }//about
@@ -183,19 +195,19 @@ header {
 	opacity: 0;
 	cursor: default;
 }
-.work.singletile:first-child {
+.work.singletile:nth-child(2) {
 	background: url('/assets/images/phonehaus.jpg');
 	background-size: cover;
 }
-.work.singletile:nth-child(2) {
+.work.singletile:nth-child(3) {
 	background: url('/assets/images/susannabot.jpg');
 	background-size: cover;
 }
-.work.singletile:nth-child(3) {
+.work.singletile:nth-child(4) {
 	background: url('/assets/images/colorclock.jpg');
 	background-size: cover;
 }
-.work.singletile:nth-child(4) {
+.work.singletile:first-child {
 	background: url('/assets/images/blog.jpg');
 	background-size: cover;
 }
