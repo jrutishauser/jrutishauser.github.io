@@ -1,14 +1,15 @@
 $bgcolor: #111;
 $txtcolor: #FFF;
 $headingcolor: #FFF;
-$mainfont: 'Roboto Condensed', sans-serif;
+$headfont: 'Roboto Condensed', sans-serif;
+$bodyfont: 'Roboto', sans-serif;
 $rollcolor: #FFF;
 $tilebg: #444;
 $contentbrdr: #2c2c2c;
 $contentbg: #FFFFFF;
 body {
 	background-color: $bgcolor;
-	font-family: $mainfont;
+	font-family: $bodyfont;
 }//body
 .container {
 	width: 100%;
@@ -21,6 +22,7 @@ body {
 	text-align: center;
 }//tilecont
 header {
+	font-family: $headfont;
 	color: $headingcolor;
 	text-align: center;
 	margin-bottom: 6vw;
@@ -34,6 +36,9 @@ header {
 	}
 }
 .singletile {
+	font-family: $headfont;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 	display: inline-block;
 	text-align: left;
 	width: 48%;
@@ -162,10 +167,19 @@ header {
 		padding: 1em;
 		box-sizing: border-box;
 		border: 17px solid $contentbrdr;
+		h3 {
+			font-family: $headfont;
+			font-weight: bold;
+			font-style: italic;
+			text-transform: uppercase;
+			font-size: 1.3em;
+		}
 		.abouttext {
 			margin: 0;
 			margin-bottom: 1em;
 			font-size: 1em;
+			font-family: $bodyfont;
+			font-weight: lighter;
 		}
 		hr {
 			color: #a29e9f;
@@ -363,7 +377,7 @@ footer {
 	color: $txtcolor;
    	width: 78%;	
 	margin: 0 auto;
-	margin-top: 10vw;
+	margin-top: 3vw;
 	text-align: center;
 	p {
 		display: none;
@@ -378,7 +392,7 @@ footer {
 		ul {
 			list-style-type: none;
 			padding: 0;
-			margin-top: 4em;
+			margin-top: 3vw;
 			margin-bottom: 4em;
 		}
 		li {
@@ -398,9 +412,14 @@ footer {
 	}
 .tilecont.about {
 	.aboutbody {
-			padding: 2em;
+			padding: 3.5em;
+			h3 {
+				margin-top: 0;
+				padding-top: 0;
+			}
 		.abouttext {
-			font-size: 1.25em;
+			font-size: 1.1em;
+			line-height: 3.5ex;
 		}
 	}
 }
