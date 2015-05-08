@@ -39,6 +39,10 @@ angular.module('jrutishausergithubio', ['ngAnimate', 'ngSanitize', 'ui.router'])
 	 	url: '/social',
 	 	templateUrl: 'app/social/social.html'
 	 })
+	 .state('rubberducky', {
+	 	url: '/rubberducky',
+	 	templateUrl: 'app/rubberducky/rubberducky.html'
+	 })
 	  ;
     $urlRouterProvider.otherwise('/');
   })

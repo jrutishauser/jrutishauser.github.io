@@ -221,6 +221,15 @@ header {
 	background: url('/assets/images/colorclock.jpg');
 	background-size: cover;
 }
+.work.singletile:nth-child(5) {
+	background: url('/assets/images/rubberducky.png');
+	background-size: cover;
+}
+.work.singletile:nth-child(6) {
+	background: url('none');
+	background-color: $bgcolor;
+	background-size: cover;
+}
 .work.singletile:first-child {
 	background: url('/assets/images/blog.jpg');
 	background-size: cover;
@@ -268,6 +277,29 @@ header {
 	cursor: default;
 }
 .susannabot.singletile:nth-child(4):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.rubberducky.singletile:nth-child(2) {
+	background: url('/assets/images/blog.jpg');
+	background-size: cover;
+}
+.rubberducky.singletile:nth-child(3) {
+	background: url('/assets/images/rubberducky.png');
+	background-size: cover;
+	animation-name: none;
+}
+.rubberducky.singletile:nth-child(4) {
+	background: url('/assets/images/reviews.png');
+	background-size: cover;
+	animation-name: none;
+	display: none;
+}
+.rubberducky.singletile:nth-child(3):hover div{
+	opacity: 0;
+	cursor: default;
+}
+.rubberducky.singletile:nth-child(4):hover div{
 	opacity: 0;
 	cursor: default;
 }
@@ -433,6 +465,9 @@ footer {
 	display: inline-block;
 }
 .colorclock.singletile:nth-child(4) {
+	display: inline-block;
+}
+.rubberducky.singletile:nth-child(4) {
 	display: inline-block;
 }
 footer {
