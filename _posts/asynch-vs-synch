@@ -1,0 +1,42 @@
+---
+title: Blocking vs non-blocking with node.js
+date: 2015-5-06
+tags:
+- tiy
+- ironYard
+- javascript
+- learning
+- codecamp
+- learnyounode
+- node
+---
+
+#### Migrated from my original blog to this new one.
+
+In the tutorial I am working on [https://github.com/workshopper/learnyounode](learnyounode) the first file read you do is synchronous.
+
+### syn·chro·nous
+
+#### adjective
+
+##### 1. existing or occurring at the same time.
+
+Not sure what anyone else would think. But that sounds like non-blocking to me. Really excited about setting up this non-blocking command I opened my downloaded codeschool slides and started playing around. My code looked great and my test!? well.. it failed. wait… failed.  what?! how?
+
+Well it turns out, synchronous in the programming world means blocking which means, one by one down the list. Processing stops while reading is happening.
+
+Asynchronous though,
+
+### a·syn·chro·nous
+
+#### adjective
+
+##### 3. (of two or more objects or events) not existing or happening at the same time.
+
+means non-blocking. Which also means while reading is happening processing can continue.
+
+Total noobie mistake however I understand it now and finished the tutorials no problem. Good thing learning from your mistakes is the best way, I should be an expert in no time. Just thought this was a funny issue and I dont blog nearly enough so there it is.
+
+For some added fun when I stated my argument with my buddy Ari his response was a video just to torture me a little more.
+
+[https://www.youtube.com/watch?v=Q8mD2hsxrhQ](https://www.youtube.com/watch?v=Q8mD2hsxrhQ)

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Hello, Im Jon Rutishauser</title>
+  <meta name="description" content="Things Ive been working on and my random thoughts">
+  <meta name="keywords" content="" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/layout.css" />
+</head>
+<body class="post-template">
+
+  <main id="content" class="content" role="main"> 
+<header>
+  <h1>Blocking vs non-blocking with node.js</h1>
+</header>
+
+<div class="tilecont">
+  <a href='/post_index' class='singletile post'><p class='tilecontents'>back to posts</p><div></div><span><i class="fa fa-arrow-left fa-5x"></i></span></a><a class='singletile post'><div></div></a><a class='singletile post'><div></div></a>
+    <section class='aboutbody'>
+      <section class="post-meta">
+        <time class="post-date" datetime="6 May 2015"><strong>Post Date:</strong> 6 May 2015</time>
+      </section>
+    <h4>Migrated from my original blog to this new one.</h4>
+<p>In the tutorial I am working on <a href="learnyounode">https://github.com/workshopper/learnyounode</a> the first file read you do is synchronous.</p>
+<h3>syn·chro·nous</h3>
+<h4>adjective</h4>
+<h5>1. existing or occurring at the same time.</h5>
+<p>Not sure what anyone else would think. But that sounds like non-blocking to me. Really excited about setting up this non-blocking command I opened my downloaded codeschool slides and started playing around. My code looked great and my test!? well.. it failed. wait… failed.  what?! how?</p>
+<p>Well it turns out, synchronous in the programming world means blocking which means, one by one down the list. Processing stops while reading is happening.</p>
+<p>Asynchronous though,</p>
+<h3>a·syn·chro·nous</h3>
+<h4>adjective</h4>
+<h5>3. (of two or more objects or events) not existing or happening at the same time.</h5>
+<p>means non-blocking. Which also means while reading is happening processing can continue.</p>
+<p>Total noobie mistake however I understand it now and finished the tutorials no problem. Good thing learning from your mistakes is the best way, I should be an expert in no time. Just thought this was a funny issue and I dont blog nearly enough so there it is.</p>
+<p>For some added fun when I stated my argument with my buddy Ari his response was a video just to torture me a little more.</p>
+<p><a href="https://www.youtube.com/watch?v=Q8mD2hsxrhQ">https://www.youtube.com/watch?v=Q8mD2hsxrhQ</a></p>
+
+      <p><strong>Tags:</strong> 
+        <a href="/tag/tiy/">tiy</a>
+      
+        <a href="/tag/ironYard/">ironYard</a>
+      
+        <a href="/tag/javascript/">javascript</a>
+      
+        <a href="/tag/learning/">learning</a>
+      
+        <a href="/tag/codecamp/">codecamp</a>
+      
+        <a href="/tag/learnyounode/">learnyounode</a>
+      
+        <a href="/tag/node/">node</a>
+      </p>
+    <a href='/' class='goback'>back home</a>
+  </section><!--aboutbody-->
+</div>
+
+
+    
+  </main>
+
+  <footer>
+    <p class="footer-published">
+      Thanks for stopping by! This site was created with <img src="/images/reptar.png" />. That terrifying green dinosaur may look like Reptar, but it's also a static site generator. If you have any questions or just want to say hey, feel free to message me on telegram at the below link or connect with me on any of the below platforms.
+    </p>
+        <ul>
+            <li><i class="fa fa-linkedin-square"></i>
+            <a href='https://www.linkedin.com/in/jonathanrutishauser' target='_new'><span>Jon Rutishauser</span></a></li>
+            <li><i class="fa fa-snapchat-square"></i><span>imnothardcore</span></li>
+        <li><i class="fa fa-twitter-square"></i><a href='http://twitter.com/jonrutis' target='_new'><span>@jonrutis</span></a></li>
+        <li><i class="fa fa-github-square"></i><a href='http://github.com/jrutishauser' target='_new'><span>jrutishauser</span></a></li>
+        <li><i class="fa fa-envelope-o"></i><a href='mailto:jrutishauser@gmail.com'><span>jrutishauser@gmail.com</span></a></li>
+        <li><i class="fa fa-telegram"></i><a href='https://t.me/imnothardcore'><span>telegram</span></a></li>
+        </ul>
+  </footer>
+
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

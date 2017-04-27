@@ -1,0 +1,10 @@
+<header>
+  <h1>My mediocre scribbles..</h1>
+</header>
+<div class='tilecont'>
+  <a href='/' class='singletile blog'>
+    <div></div>
+    <span><i class="fa fa-arrow-left fa-5x"></i></span>
+    <p class='tilecontents'>back</p>
+  </a>{% for file in pagination.files %}<a href='{{file.url}}' class='singletile blog'><div></div><p class='tilecontents'><time class="post-date" datetime="{{file.date | date('MMM YYYY')}}">{{file.date | date('MMM YYYY')}}</time> {{file.title | truncate(17, true, "...")}}</p></a>{% endfor %}
+</div><!--tilecontainer-->

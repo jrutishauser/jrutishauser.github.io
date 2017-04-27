@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>{% block head_title %}{{site.title}}{% endblock %}</title>
+  <meta name="description" content="{{site.description}}">
+  <meta name="keywords" content="{{site.keywords}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="/css/layout.css" />
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+  <header class="main-header">
+    <h1 class="page-title">{{site.title}}</h1>
+    <h3>I am a software developer in sunny Orlando, Florida</h3>
+  </header>
+  <div class="vertical">
+    <div class="main-header-content">
+      <div class='tilecont'>
+        <a href="/about/" class='singletile'><div></div><p class='tilecontents'>About</p></a><a href="/work/" class='singletile'><div></div><p class='tilecontents'>Work</p></a><a href="JavaScript:Void(0);" class='singletile main'><div></div></a><a href="/post_index/" class='singletile'><div></div><p class='tilecontents'>Blog</p></a><a href="/contact/" class='singletile'><div></div><p class='tilecontents'>Connect</p></a>{% for file in pagination.files %}<a href="{{file.url}}" class='singletile'><div></div><p class='tilecontents'>{{file.title}}</p></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-published">
+      Thanks for stopping by! This site was created with <img src="/images/reptar.png" />. That terrifying green dinosaur may look like Reptar, but it's also a static site generator. If you have any questions or just want to say hey, feel free to message me on telegram at the below link or connect with me on any of the below platforms.
+    </p>
+        <ul>
+            <li><i class="fa fa-linkedin-square"></i>
+            <a href='https://www.linkedin.com/in/jonathanrutishauser' target='_new'><span>Jon Rutishauser</span></a></li>
+            <li><i class="fa fa-snapchat-square"></i><span>imnothardcore</span></li>
+        <li><i class="fa fa-twitter-square"></i><a href='http://twitter.com/jonrutis' target='_new'><span>@jonrutis</span></a></li>
+        <li><i class="fa fa-github-square"></i><a href='http://github.com/jrutishauser' target='_new'><span>jrutishauser</span></a></li>
+        <li><i class="fa fa-envelope-o"></i><a href='mailto:jrutishauser@gmail.com'><span>jrutishauser@gmail.com</span></a></li>
+        <li><i class="fa fa-telegram"></i><a href='https://t.me/imnothardcore'><span>telegram</span></a></li>
+        </ul>
+  </footer>
+</body>
+</html>

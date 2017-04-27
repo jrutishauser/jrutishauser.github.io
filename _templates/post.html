@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body_class %}post-template{% endblock%}
+
+{% block content %}
+<header>
+  <h1>{{file.title}}</h1>
+</header>
+
+<div class="tilecont">
+  <a href='/post_index' class='singletile post'><p class='tilecontents'>back to posts</p><div></div><span><i class="fa fa-arrow-left fa-5x"></i></span></a><a class='singletile post'><div></div></a><a class='singletile post'><div></div></a>
+    <section class='aboutbody'>
+      <section class="post-meta">
+        <time class="post-date" datetime="{{file.date | date('D MMMM YYYY')}}"><strong>Post Date:</strong> {{file.date | date('D MMMM YYYY')}}</time>
+      </section>
+    {{file.content | safe}}
+      <p><strong>Tags:</strong> {% for tag in file.tags %}
+        <a href="/tag/{{tag}}/">{{tag}}</a>
+      {% endfor%}</p>
+    <a href='/' class='goback'>back home</a>
+  </section><!--aboutbody-->
+</div>
+{% endblock%}

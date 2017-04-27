@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body_class %}hasubrewer{% endblock%}
+
+{% block content %}
+<div class='container'>
+  <div class='tilecont'>
+      <header>
+        <h1>Susannabot</h1>
+      </header><!--header-->
+      <a class='singletile susannabot' href='/work'>
+          <p class='tilecontents'>back to work</p>
+        <div></div>
+        <span><i class="fa fa-arrow-left fa-5x"></i></span>
+      </a><a class='singletile susannabot'>
+          <div></div>
+      </a><a class='singletile susannabot'>
+        <div></div>
+      </a>
+      <section class='aboutbody'>
+      <p class='abouttext'>
+    SusannaBot is a google chrome extension of the campus director
+    at the Orlando Iron Yard. This was a team project built in a couple
+    days several weeks into the program. Press the advice button and
+    a random piece of advice is sent from an API. Press cuddle huddle
+    and answer a random question that is then posted to our class slack. View code
+    <a href='https://github.com/jrutishauser/TIY-Mashup' target='blank'>
+    here on github</a>
+        </p>
+        <h3>Tech Stack Used</h3>
+          <ul class='icons'>
+            <li><img src='/images/chrome.png' alt='chrome'></li>
+            <li><img src='/images/html5.png' alt='html5'></li>
+            <li><img src='/images/css3.svg' alt='css3'></li>
+            <li><img src='/images/jquery-icon.png' alt='jQuery'></li>
+          </ul>
+      <a href='/'>back home</a>
+      </section><!--aboutbody-->
+  </div><!--tilecont-->
+</div><!--container-->
+{% endblock%}

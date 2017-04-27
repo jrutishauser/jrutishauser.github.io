@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body_class %}hasubrewer{% endblock%}
+
+{% block content %}
+<div class='container'>
+  <div class='tilecont'>
+      <header>
+        <h1>Colorclock</h1>
+      </header><!--header-->
+      <a href='/work' class='singletile colorclock'>
+        <p class='tilecontents'>back to work</p>
+        <div></div>
+        <span><i class="fa fa-arrow-left fa-5x"></i></span>
+      </a><a class='singletile colorclock'>
+          <div></div>
+      </a><a class='singletile colorclock'>
+        <div></div>
+      </a>
+      <section class='aboutbody'>
+      <p class='abouttext'>
+    The colorclock was a homework assignment at The Iron Yard. 
+    The assignment was to build a live clock that also changes the color
+    of the background of the website using Javascript. After
+    completing the Javscript portion I wanted to add some style to 
+    the clock. I always was fascinated by designers making everyday
+    objects out of just CSS. For this project I decided to attempt 
+    making an iPhone using just CSS. View my colorclock 
+    <a href='/colorclocklive.html' target='blank'>live here</a>.</p>
+        <h3>Tech Stack Used</h3>
+          <ul class='icons'>
+            <li><img src='/images/html5.png' alt='html5'></li>
+            <li><img src='/images/css3.svg' alt='css3'></li>
+            <li><img src='/images/jquery-icon.png' alt='jQuery'></li>
+          </ul>
+      <a href='/' >back to home</a>  
+      </section><!--aboutbody-->
+  </div><!--tilecont-->
+</div><!--container-->
+{% endblock%}
